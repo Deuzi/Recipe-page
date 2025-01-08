@@ -1,5 +1,41 @@
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+:root{
+ --white: hsl(0, 0%, 100%);
+--very-light-brown: hsl(30, 54%, 90%);
+--light-brown: hsl(30, 18%, 87%);
+--grey-brown: hsl(30, 10%, 34%);
+--dark-brown: hsl(24, 5%, 18%);
+
+--header-color: hsl(14, 45%, 36%);
+
+--rose: hsl(332, 51%, 32%);
+--light-rose: hsl(330, 100%, 98%);
+}
+
+body {
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+.recipe-container {
+    background-color: var(--very-light-brown);
+}
+
+.recipe-container #hero-img{
+    max-width: 100vw;
+    object-fit: cover;
+}
+
+.recipe-items{
+    padding: 1.5rem  1.7rem;
+}
+.recipe-items li{
+    margin-left: 1rem;
 }
