@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -18,14 +17,16 @@
 
 --rose: hsl(332, 51%, 32%);
 --light-rose: hsl(330, 100%, 98%);
+--lyt-rose: hsl(335, 33%, 93%);
 }
 
 body {
-    font-size: clamp(14px, 2vw, 24px);
+    font-family: Outfit, 'serif';
 }
 
 .recipe-container {
-    background-color: var(--very-light-brown);
+    background-color: var(--light-rose);
+    color: var(--grey-brown);
 }
 
 .recipe-container #hero-img{
@@ -38,4 +39,101 @@ body {
 }
 .recipe-items li{
     margin-left: 1rem;
+}
+
+.recipe-name h1{
+    color: var(--dark-brown);
+    font-family: Young serif, 'serif';
+    margin-bottom: 0.7rem;
+}
+.recipe-name p{
+    margin-bottom: 2rem;
+}
+
+.bold{
+    color: var(--grey-brown);
+    font-weight: 700;
+}
+
+.prep-time{
+    background-color: var(--lyt-rose);
+    border-radius: 7px;
+    padding: 0.5rem 1.5rem;
+    
+}
+.prep-time h2 {
+    color: var(--rose);
+    margin-bottom: 1rem;
+}
+
+.prep-time ul{
+    width: 200px;   
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+h2{
+    margin: 0.9rem 0;
+    color: var(--header-color);
+    font-family: Young serif, 'serif';
+    font-size: clamp(14px, 5vw, 24px);;
+}
+
+hr{
+    border: none;
+    background-color: var(--lyt-rose);
+    height: 1.5px;
+}
+
+
+.ingredients{
+    margin-bottom: 2rem;
+}
+
+.instruction{
+    margin-bottom: 2rem;
+}
+
+.instruction .bold{
+    margin-right: 0.2rem;
+}
+
+.instruction li{
+    list-style: decimal;
+    padding-left: 0.6rem;
+}
+
+.instruction li::marker{
+    font-weight: 600;
+    color: var(--header-color);    
+}
+
+
+.nutrition .table{
+    display: block;
+    padding: 0.7rem 3.5rem;
+}
+
+.table-item {
+    display: flex;
+    margin: 0.7rem 0;
+}
+
+.table-item  .bold{
+   margin-left: 2rem;
+   color: var(--header-color);
+}
+
+.table-item #carbs {
+    margin-right: 0.9rem;
+}
+
+.table-item #protein {
+    margin-right: 0.3rem;
+}
+
+.table-item #fat {
+    margin-right: 2rem;
 }
