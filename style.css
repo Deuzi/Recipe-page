@@ -9,6 +9,7 @@
 :root{
  --white: hsl(0, 0%, 100%);
 --very-light-brown: hsl(30, 54%, 90%);
+--very-light-brown-2: hsl(30, 100%, 97%);
 --light-brown: hsl(30, 18%, 87%);
 --grey-brown: hsl(30, 10%, 34%);
 --dark-brown: hsl(24, 5%, 18%);
@@ -25,7 +26,7 @@ body {
 }
 
 .recipe-container {
-    background-color: var(--light-rose);
+    background-color: var(--white);
     color: var(--grey-brown);
 }
 
@@ -123,8 +124,8 @@ hr{
 }
 
 .table-item  .bold{
-   margin-left: 2rem;
-   color: var(--header-color);
+    margin-left: 2rem;
+    color: var(--header-color);
 }
 
 .table-item #carbs {
@@ -137,4 +138,45 @@ hr{
 
 .table-item #fat {
     margin-right: 2rem;
+}
+
+@media (min-width:500px){
+    .recipe-items{
+        margin: 1rem;
+        font-size: clamp(14px, 4vw, 26px);
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .table-item #fat {
+        margin-right: 3.2rem;
+    }
+}
+@media  (min-width:768px) {
+    body{
+        background-color: var(--very-light-brown);
+    }
+    
+    .recipe-container #hero-img{
+        width: 530px;
+        height: 350px;
+        border-radius: 15px ;
+        margin: 1rem;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 100vw;
+    }
+    
+    .recipe-container{
+        width: 600px;
+        margin: 3rem 0;
+        border-radius:15px;
+        padding: 1rem;
+    }
 }
